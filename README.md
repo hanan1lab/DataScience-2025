@@ -37,7 +37,6 @@ project/
 │   └── data_processed.csv
 │   └── drug_consumption.data
 |
-|
 ├── images/
 │   └── Cek Noise Outlier.png
 │   └── Confusion Matrix LR.png
@@ -54,7 +53,6 @@ project/
 │   ├── model_baseline.pkl
 │   └── model_toxicity_dl.keras
 │
-│
 ├── notebooks/
 │   └── ML_Project_234311040.ipynb
 │
@@ -68,7 +66,6 @@ project/
 │   └── Feature Engineering.py
 │   └── Model Training.py
 │   
-│
 ├── Laporan Proyek Machine Learning.pdf
 ├── Checklist Submit.md
 ├── LICENSE
