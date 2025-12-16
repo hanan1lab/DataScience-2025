@@ -1,0 +1,145 @@
+# 📘 Judul Proyek
+Klasifikasi Pengguna Obat (Cannabis) berdasarkan Profil Psikologis Menggunakan Deep Learning
+
+## 👤 Informasi
+- **Nama:** Hanan Labib Rasyaddin
+- **NIM:** 234311041
+- **Repo:** [Masukkan Link GitHub Anda]
+- **Video:** [Masukkan Link YouTube Anda]
+
+---
+
+# 1. 🎯 Ringkasan Proyek
+- Menyelesaikan permasalahan deteksi dini risiko penyalahgunaan narkoba berbasis data psikologis (*psychometric data*).
+- Melakukan data preparation meliputi cleaning, binary encoding, dan scaling menggunakan **StandardScaler**.
+- Membangun 3 model: **Baseline (Logistic Regression)**, **Advanced (SVM Balanced)**, **Deep Learning (MLP)**.
+- Melakukan evaluasi menggunakan metrik **Accuracy, F1-Score, dan Recall** untuk menangani dataset yang tidak seimbang (*imbalanced*).
+
+---
+
+# 2. 📄 Problem & Goals
+**Problem Statements:**
+- Penyalahgunaan narkoba sulit dideteksi secara dini tanpa metode klinis yang mahal.
+- Dataset memiliki karakteristik *imbalanced* (User > Non-User), yang menyebabkan model cenderung bias ke kelas mayoritas.
+- Hubungan antara sifat kepribadian (*personality traits*) dan perilaku risiko bersifat kompleks dan non-linear.
+
+**Goals:**
+- Membangun model klasifikasi biner dengan target akurasi > 80%.
+- Menangani ketimpangan data menggunakan teknik *Class Weighting*.
+- Membandingkan performa model linear, machine learning klasik, dan neural network.
+
+---
+## 📁 Struktur Folder
+```
+project/
+│
+├── data/
+│   └── data_processed.csv
+│   └── drug_consumption.data
+│
+├── notebooks/
+│   └── ML_Project_234311040.ipynb
+│
+├── src/
+│   └── Data Import & MakeDir.py
+│   └── Data Loading & Cleaning.py
+│   └── Data Splitting.py
+│   └── Data Transformation.py
+│   └── EDA Visualization.py
+│   └── Evaluation & Comparison
+│   └── Feature Engineering.py
+│   └── Model Training.py
+│   
+├── models/
+│   ├── model_advanced.pkl
+│   ├── model_baseline.pkl
+│   └── model_toxicity_dl.keras
+│
+├── images/
+│   └── Cek Noise Outlier.png
+│   └── Confusion Matrix LR.png
+│   └── Confusion matrix DL pada data test.png
+│   └── Confusion matrix DL.png
+|   └── Distribusi data targer.png
+|   └── Visualisasi accuracy dan loss per epoch dl.png
+|   └── Visualisasi Eda.png
+|   └──Visualisasi perbandingan model.png
+|   └── Confusion matrix SVM.png
+│
+├── Laporan Proyek Machine Learning.md
+├── Checklist Submit.md
+├── LICENSE
+├── requirements.txt
+├── .gitignore
+└── README.md---
+
+# 3. 📊 Dataset
+- **Sumber:** UCI Machine Learning Repository / Figshare
+- **Jumlah Data:** 1885 Baris, 12 Fitur Utama
+- **Tipe:** Tabular (Kuantitatif & Kategorikal yang sudah dikuantifikasi)
+
+### Fitur Utama
+| Fitur | Deskripsi |
+|------|-----------|
+| Personality Scores | Nscore (Neuroticism), Escore (Extraversion), Oscore (Openness), dll. |
+| Risk Traits | Impulsive (Impulsivitas), SS (Sensation Seeking) |
+| Target (Class) | Label: 'User' (1) atau 'Non-User' (0) |
+
+---
+
+# 4. 🔧 Data Preparation
+- **Cleaning:** Pengecekan missing values (Data bersih 100%).
+- **Transformation:** Encoding target menjadi biner (User vs Non-User) dan Feature Scaling (StandardScaler).
+- **Splitting:** Stratified Split (70% Train, 15% Val, 15% Test).
+- **Handling Imbalance:** Menggunakan parameter `class_weight='balanced'` pada model SVM.
+
+---
+
+# 5. 🤖 Modeling
+- **Model 1 – Baseline:** **Logistic Regression** (Linear model, simple & fast).
+- **Model 2 – Advanced ML:** **Support Vector Machine (SVM)** (Kernel RBF, Class Weight Balanced).
+- **Model 3 – Deep Learning:** **Multilayer Perceptron (MLP)** dengan arsitektur: Input(12) -> Dense(16, ReLU) -> Dense(8, ReLU) -> Output(1, Sigmoid).
+
+---
+
+# 6. 🧪 Evaluation
+**Metrik:** **F1-Score (Macro)** & Accuracy. (F1-Score penting karena data imbalanced).
+
+### Hasil Singkat
+| Model | Accuracy | F1-Score | Catatan |
+|-------|--------|---------|---------|
+| Baseline (LogReg) | 80.5% | 0.76 | Cepat, namun Recall untuk Non-User rendah. |
+| Advanced (SVM) | 79.2% | 0.78 | Recall paling tinggi (sensitif), tapi banyak False Positive. |
+| Deep Learning (MLP) | **81.8%** | **0.80** | **Model Terbaik.** Seimbang antara Akurasi dan deteksi kelas minoritas. |
+
+---
+
+# 7. 🏁 Kesimpulan
+- **Model terbaik:** Deep Learning (Multilayer Perceptron).
+- **Alasan:** Menunjukkan kurva pembelajaran (*learning curve*) yang stabil (Good Fit) dan mampu menangkap pola non-linear dari fitur kepribadian.
+- **Insight penting:** Fitur **Sensation Seeking (SS)** dan **Openness** adalah indikator terkuat dalam memprediksi risiko penggunaan obat.
+
+---
+
+# 8. 🔮 Future Work
+- [x] Hyperparameter tuning lebih ekstensif
+- [x] Ensemble methods (combining models)
+- [ ] Menambah variasi data responden dari negara lain
+- [ ] Deployment (Streamlit/FastAPI)
+
+---
+
+# 9. 🔁 Reproducibility
+Gunakan environment:
+**Python 3.10+**
+Libraries utama:
+- `pandas`
+- `numpy`
+- `scikit-learn`
+- `tensorflow` (Keras)
+- `seaborn`
+- `joblib`
+
+Instalasi:
+```bash
+pip install -r requirements.txt
