@@ -85,7 +85,7 @@ project/
 ### Fitur Utama
 | Fitur | Deskripsi |
 |------|-----------|
-|Demografi | Age , Gender|
+|Demografi | Age, Gender.|
 | Personality Scores | Nscore (Neuroticism), Escore (Extraversion), Oscore (Openness). |
 | Risk Traits | Impulsive (Impulsivitas), SS (Sensation Seeking) |
 | Target (Class) | Label: 'User' (1) atau 'Non-User' (0) |
