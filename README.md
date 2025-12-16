@@ -113,9 +113,9 @@ project/
 ### Hasil Singkat
 | Model | Accuracy | F1-Score | Catatan |
 |-------|--------|---------|---------|
-| Baseline (LogReg) | 80.5% | 0.76 | Cepat, namun Recall untuk Non-User rendah. |
-| Advanced (SVM) | 79.2% | 0.78 | Recall paling tinggi (sensitif), tapi banyak False Positive. |
-| Deep Learning (MLP) | **81.8%** | **0.80** | **Model Terbaik.** Seimbang antara Akurasi dan deteksi kelas minoritas. |
+| Baseline (LogReg) | 81.27% | 0.66 | Cepat, namun Recall untuk Non-User rendah. |
+| Advanced (SVM) | 75.97% | 0.71 | Recall paling tinggi (sensitif), tapi banyak False Positive. |
+| Deep Learning (MLP) | **80.92%** | **0.68** | **Model Terbaik.** Seimbang antara Akurasi dan deteksi kelas minoritas. |
 
 ---
 
