@@ -136,10 +136,15 @@ project/
 
 # 9. 🔁 Reproducibility
 Untuk menjalankan proyek ini di lokal, gunakan environment berikut:
+
 Clone Repository:
+
 git clone https://github.com/hanan1lab/DataScience-2025
+
 cd DataScience-2025
+
 Install Dependencies:
+
 pip install -r requirements.txt
 
 Jalankan Notebook: Buka file di notebooks/234311041_Hanan_Labib_Rasyaddin_UAS_Data_Science.ipynb menggunakan Jupyter Notebook atau VS Code.
