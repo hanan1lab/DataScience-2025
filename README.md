@@ -4,7 +4,7 @@ Klasifikasi Pengguna Obat (Cannabis) berdasarkan Profil Psikologis Menggunakan D
 ## 👤 Informasi
 - **Nama:** Hanan Labib Rasyaddin
 - **NIM:** 234311041
-- **Repo:** [Masukkan Link GitHub Anda]
+- **Repo:** https://github.com/hanan1lab/DataScience-2025 
 - **Video:** [Masukkan Link YouTube Anda]
 
 ---
@@ -36,6 +36,24 @@ project/
 ├── data/
 │   └── data_processed.csv
 │   └── drug_consumption.data
+|
+|
+├── images/
+│   └── Cek Noise Outlier.png
+│   └── Confusion Matrix LR.png
+│   └── Confusion matrix DL pada data test.png
+│   └── Confusion matrix DL.png
+|   └── Distribusi data targer.png
+|   └── Visualisasi accuracy dan loss per epoch dl.png
+|   └── Visualisasi Eda.png
+|   └──Visualisasi perbandingan model.png
+|   └── Confusion matrix SVM.png
+|
+├── models/
+│   ├── model_advanced.pkl
+│   ├── model_baseline.pkl
+│   └── model_toxicity_dl.keras
+│
 │
 ├── notebooks/
 │   └── ML_Project_234311040.ipynb
@@ -50,23 +68,8 @@ project/
 │   └── Feature Engineering.py
 │   └── Model Training.py
 │   
-├── models/
-│   ├── model_advanced.pkl
-│   ├── model_baseline.pkl
-│   └── model_toxicity_dl.keras
 │
-├── images/
-│   └── Cek Noise Outlier.png
-│   └── Confusion Matrix LR.png
-│   └── Confusion matrix DL pada data test.png
-│   └── Confusion matrix DL.png
-|   └── Distribusi data targer.png
-|   └── Visualisasi accuracy dan loss per epoch dl.png
-|   └── Visualisasi Eda.png
-|   └──Visualisasi perbandingan model.png
-|   └── Confusion matrix SVM.png
-│
-├── Laporan Proyek Machine Learning.md
+├── Laporan Proyek Machine Learning.pdf
 ├── Checklist Submit.md
 ├── LICENSE
 ├── requirements.txt
