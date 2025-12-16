@@ -49,29 +49,31 @@ project/
 |   └── Confusion matrix SVM.png
 |
 ├── models/
-│   ├── model_advanced.pkl
-│   ├── model_baseline.pkl
-│   └── model_toxicity_dl.keras
+│   ├── model_dl.h5
+│   ├── model_lr.pkl
+│   └── model_svm.pkl
 │
 ├── notebooks/
-│   └── ML_Project_234311040.ipynb
+│   └── 234311041_Hanan_Labib_Rasyaddin_UAS_Data_Science.ipynb
 │
 ├── src/
-│   └── Data Import & MakeDir.py
-│   └── Data Loading & Cleaning.py
-│   └── Data Splitting.py
-│   └── Data Transformation.py
-│   └── EDA Visualization.py
-│   └── Evaluation & Comparison
-│   └── Feature Engineering.py
-│   └── Model Training.py
-│   
+│   └── DataCleaning.py
+│   └── Feature_Engineering.py
+│   └── Import dan Load dataset.py
+│   └── Model_DeepLearning_MLP.py
+│   └── Model_LogisticRegression.py
+│   └── Model_SVM.py
+│   └── Normalisasi.py
+│   └── Splittingdata.py
+|   └── Visualisasi_EDA.py
+|   └── Visualisasi_perbandingan_3 Model.py
+│
+├── .gitignore
 ├── Laporan Proyek Machine Learning.pdf
 ├── Checklist Submit.md
 ├── LICENSE
-├── requirements.txt
-├── .gitignore
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -83,7 +85,8 @@ project/
 ### Fitur Utama
 | Fitur | Deskripsi |
 |------|-----------|
-| Personality Scores | Nscore (Neuroticism), Escore (Extraversion), Oscore (Openness), dll. |
+|Demografi | Age , Gender|
+| Personality Scores | Nscore (Neuroticism), Escore (Extraversion), Oscore (Openness). |
 | Risk Traits | Impulsive (Impulsivitas), SS (Sensation Seeking) |
 | Target (Class) | Label: 'User' (1) atau 'Non-User' (0) |
 
