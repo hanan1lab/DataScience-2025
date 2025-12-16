@@ -72,7 +72,9 @@ project/
 ├── requirements.txt
 ├── .gitignore
 └── README.md---
+```
 
+---
 # 3. 📊 Dataset
 - **Sumber:** UCI Machine Learning Repository / Figshare
 - **Jumlah Data:** 1885 Baris, 12 Fitur Utama
