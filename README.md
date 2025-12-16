@@ -71,7 +71,7 @@ project/
 ├── LICENSE
 ├── requirements.txt
 ├── .gitignore
-└── README.md---
+└── README.md
 ```
 
 ---
