@@ -7,7 +7,7 @@
 - [x] Ada visualisasi EDA (min. 3) (Distribusi Kelas, Heatmap, Training Loss, Perbandingan Model)
 - [x] Ada hasil evaluasi ketiga model (Tabel & Grafik Metrik)
 - [x] Ada link GitHub yang dapat diakses
-- [ ] Ada link video penjelasan proyek
+- [x] Ada link video penjelasan proyek
 
 ### **GitHub Repository:**
 - [x] Kode dapat dijalankan (tested)
