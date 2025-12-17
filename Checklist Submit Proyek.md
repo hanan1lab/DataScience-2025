@@ -3,7 +3,7 @@
 
 ### **Laporan (PDF/Word/Markdown):**
 - ✅ Semua section terisi lengkap
-- ✅ Ada 3 model yang dijelaskan (Logistic Regression, Random Forest, MLP)
+- ✅ Ada 3 model yang dijelaskan (Logistic Regression, Support Vector Machine, MLP)
 - ✅ Ada visualisasi EDA (min. 3) (Distribusi Kelas, Heatmap, Training Loss, Perbandingan Model)
 - ✅ Ada hasil evaluasi ketiga model (Tabel & Grafik Metrik)
 - ✅ Ada link GitHub yang dapat diakses
